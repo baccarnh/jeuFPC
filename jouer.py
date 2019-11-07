@@ -29,28 +29,34 @@ def CHOIXPC():
 def ATTRIBUE():
     scor_pl= 0
     scor_comp= 0
-    player_c=CHOIX()
-    computer_c=CHOIXPC()
-    player_win=[('PIERRE','CISEAUX'), ('FEUILLE','PIERRE'), ('CISEAUX', 'FEUILLE')]
-    computer_win=[('PIERRE','FEUILLE'), ('FEUILLE','CISEAU'), ('CISEAUX', 'PIERRE') ]
-    if player_c==computer_c:
-        scor_pl+=0
-        scor_comp+=0
-        print("vous avez fait le meme choix que la machine vos scores")
-    elif (player_c, computer_c) in player_win:
-        scor_pl+=1
-        scor_comp+=0
-    elif (player_c, computer_c) in computer_win :
-        scor_pl+=0
-        scor_comp+=1
-    print("le score du joueur est",scor_pl, "le score de la machine est", scor_comp)
+    while scor_pl!=3 and scor_comp!=3:
+        player_c=CHOIX()
+        computer_c=CHOIXPC()
+        player_win=[('PIERRE','CISEAUX'), ('FEUILLE','PIERRE'), ('CISEAUX', 'FEUILLE')]
+        computer_win=[('PIERRE','FEUILLE'), ('FEUILLE','CISEAUX'), ('CISEAUX', 'PIERRE') ]
+        if player_c==computer_c:
+            scor_pl+=0
+            scor_comp+=0
+            print("vous avez fait le meme choix que la machine vos scores")
+        elif (player_c, computer_c) in player_win:
+            scor_pl+=1
+            scor_comp+=0
+        elif (player_c, computer_c) in computer_win :
+            scor_pl+=0
+            scor_comp+=1
+        print("le score du joueur est",scor_pl, "le score de la machine est", scor_comp)
+    if scor_pl==3:
+        print('la partie est finie, vous avez gagné')
+    elif scor_comp==3:
+        print('la partie est finie, vous avez perdu')
     return (scor_pl, scor_comp)
 
 
 
-scorej=0
-scorepc=0
+
 
 ENTRE()
-while scorej<3 and scorepc<3:
-    (scorej, scorepc)=ATTRIBUE()
+scorej=0
+scorepc=0
+(scorej, scorepc)=ATTRIBUE()
+
