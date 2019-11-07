@@ -7,16 +7,15 @@ def ENTRE():
         print("nom du joueur=", nom.upper())
 
 def CHOIX():
-    ch=input("entrer votre choix parmi feuille/pierre/ciseaux")
-    ch=ch.upper() ##accept all type of letters
-    FPC=['FEUILLE', 'PIERRE', 'CISEAUX']
-    while ch not in FPC: ##verify that the choice is OK
+    ch = input("entrer votre choix parmi feuille/pierre/ciseaux").upper()
+    # ch=ch.upper() ##accept all type of letters
+    FPC = ['FEUILLE', 'PIERRE', 'CISEAUX']
+    while ch not in FPC:  ##verify that the choice is OK
         print("erreur choix non valide")
-        ch=input("rentrer votre choix de nouveau")
+        ch = input("entrer votre choix parmi feuille/pierre/ciseaux").upper()
     if ch in FPC:
         print("le choix du joueur est", ch)
     return ch
-
 
 def CHOIXPC():
     import random
@@ -52,6 +51,18 @@ def ATTRIBUE():
     return (scor_pl, scor_comp)
 
 
+def PLAYAGAIN():
+    pl = input("voulez vous jouer de nouveau? taper oui ou non")
+    pl.upper()
+    tag=["OUI", "NON"]
+    while pl not in tag:
+        print("erreur de saisie taper oui ou non")
+        pl = input("entrer votre r&ponce de nouveau")
+    if pl=="NON":
+        print("Merci Aurevoir")
+    elif pl=="OUI":
+        print("les scores sont remis à zéros")
+        ATTRIBUE()
 
 
 
@@ -59,4 +70,5 @@ ENTRE()
 scorej=0
 scorepc=0
 (scorej, scorepc)=ATTRIBUE()
+PLAYAGAIN()
 
