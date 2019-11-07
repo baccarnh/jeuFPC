@@ -32,7 +32,7 @@ def ATTRIBUE():
     player_c=CHOIX()
     computer_c=CHOIXPC()
     player_win=[('PIERRE','CISEAUX'), ('FEUILLE','PIERRE'), ('CISEAUX', 'FEUILLE')]
-    computer_win=[('PIERRE','FEUILLE'), ('FEUILLE','CISEAU'), ('CISEAUX', 'FEUILLE') ]
+    computer_win=[('PIERRE','FEUILLE'), ('FEUILLE','CISEAU'), ('CISEAUX', 'PIERRE') ]
     if player_c==computer_c:
         scor_pl+=0
         scor_comp+=0
@@ -44,13 +44,13 @@ def ATTRIBUE():
         scor_pl+=0
         scor_comp+=1
     print("le score du joueur est",scor_pl, "le score de la machine est", scor_comp)
-    return scor_pl, scor_comp
+    return (scor_pl, scor_comp)
 
 
 
-
+scorej=0
+scorepc=0
 
 ENTRE()
-
-ATTRIBUE()
-while scor_pl<3 and scor_comp<3
+while scorej<3 and scorepc<3:
+    (scorej, scorepc)=ATTRIBUE()
