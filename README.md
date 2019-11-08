@@ -1,22 +1,17 @@
+## circonstances to write this code:
+  As exercise for the fourth week in a python cours and to apply diffrents theories teached, we have to carry out a first project.
+  we have to code the fishumi game using functions and loops.
 
+## fishumi game rules:
 
+- The user lance the program and insert her name.
+- He make choice from: pierre/feuille/ciseaux.
+- The computer also make a random choice.
+- Ones the two choices acheived, they will be compare to attribute marks according to the following rules:
 
+      *pierre beats ciseaux
+      *feuille beats pierre
+      *ciseaux beats feuille.
 
-
-
-
-
-
-
-## Les règles du jeu du pierre-feuille-ciseaux
-
-- l'utilisateur lance le programme et indique son nom à la machine.
-- Il choisit entre les valeurs pierre, feuille ou ciseaux.
-- L'ordinateur choisit à son tour de manière aléatoire.
-- Une fois les deux choix effectués, les réponses sont comparées pour déterminer qui a marqué le point.
-- La règle est la suivante :
-      La pierre bat les ciseaux
-      La feuille bat la pierre
-      Les ciseaux battent la feuille.
-
-En cas d'égalité aucun point n'est attribué. La partie continue ainsi tant que personne n'est arrivé à 3 points
+If two choice are similar, no marks added for both.
+the game is restarted until one of the player or the computer has three points.
