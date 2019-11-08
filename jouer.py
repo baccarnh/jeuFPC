@@ -47,9 +47,9 @@ def ATTRIBUE():
         print("le score de la machine est".center(40), scor_comp)
         print("**************************************************************************")
     if scor_pl==3:
-        print("la partie est finie, œœœœœœœœœœœœœœœœœœœœœœ vous avez gagné œœœœœœœœœœœœœœœœœœœœœœœ")
+        print("la partie est finie, œœœœœœœœœœœœœœœœœœœœœœ vous avez gagné œœœœœœœœœœœœœœœœœœœœœœœ".center(20))
     elif scor_comp==3:
-        print("la partie est finie, :vous avez perdu")
+        print("la partie est finie, ::(:(:(::(:(:(:(:(:vous avez perdu:(:(:(:(:(:(:(:(:".center(20))
     return (scor_pl, scor_comp)
 
 
@@ -60,12 +60,12 @@ def PLAYAGAIN():
         print("erreur de saisie taper oui ou non")
         pl = input("entrer votre réponce de nouveau").upper()
     if pl=="NON":
-        print("Merci Aurevoir")
+        print("Merci Aurevoir".center(50))
     elif pl=="OUI":
-        print("les scores sont remis à zéros")
+        print("les scores sont remis à zéros".center(50))
     return pl
 
-
+#the main code body
 
 ENTRE()
 scorej=0
