@@ -1,3 +1,13 @@
+
+
+
+
+
+
+
+
+
+
 ## Les règles du jeu du pierre-feuille-ciseaux
 
 - l'utilisateur lance le programme et indique son nom à la machine.
