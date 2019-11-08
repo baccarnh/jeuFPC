@@ -9,9 +9,16 @@
 - The computer also make a random choice.
 - Ones the two choices acheived, they will be compare to attribute marks according to the following rules:
 
-      *pierre beats ciseaux
-      *feuille beats pierre
-      *ciseaux beats feuille.
+      * pierre beats ciseaux
+      * feuille beats pierre
+      * ciseaux beats feuille.
 
 If two choice are similar, no marks added for both.
 the game is restarted until one of the player or the computer has three points.
+
+## Goals acheived:
+
+- Defining functions
+- using loops
+- using tuples, lists
+- provide user's errors
