@@ -52,17 +52,16 @@ def ATTRIBUE():
 
 
 def PLAYAGAIN():
-    pl = input("voulez vous jouer de nouveau? taper oui ou non")
-    pl.upper()
+    pl = input("voulez vous jouer de nouveau? taper oui ou non").upper()
     tag=["OUI", "NON"]
     while pl not in tag:
         print("erreur de saisie taper oui ou non")
-        pl = input("entrer votre r&ponce de nouveau")
+        pl = input("entrer votre réponce de nouveau").upper()
     if pl=="NON":
         print("Merci Aurevoir")
     elif pl=="OUI":
         print("les scores sont remis à zéros")
-        ATTRIBUE()
+    return pl
 
 
 
@@ -70,5 +69,9 @@ ENTRE()
 scorej=0
 scorepc=0
 (scorej, scorepc)=ATTRIBUE()
-PLAYAGAIN()
-
+answer=PLAYAGAIN()
+while answer=="OUI":
+    scorej = 0
+    scorepc = 0
+    (scorej, scorepc)=ATTRIBUE()
+    answer=PLAYAGAIN()
