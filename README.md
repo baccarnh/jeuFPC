@@ -29,4 +29,4 @@ the game is restarted until one of the player or the computer has three points.
 - Provide user's errors
 - Manage coding errors
 - A good plan of time
-- A respect of deadline and usecese plan
+- A respect of deadline and usecese steps
