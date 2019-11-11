@@ -1,6 +1,11 @@
 ## circonstances to write this code:
+
   As exercise for the fourth week in a python cours and to apply diffrents theories teached, we have to carry out a first project.
-  we have to code the fishumi game using functions and loops.
+  We have to code the fishumi game using functions and loops.
+  Every one should rely on my self to plannify my working time via Trello account and usecase plan.
+  We had to be able to manage coding error and to provide users' mistakes.
+
+
 
 ## fishumi game rules:
 
@@ -19,6 +24,9 @@ the game is restarted until one of the player or the computer has three points.
 ## Goals acheived:
 
 - Defining functions
-- using loops
-- using tuples, lists
-- provide user's errors
+- Using loops
+- Using tuples, lists
+- Provide user's errors
+- Manage coding errors
+- A good plan of time
+- A respect of deadline and usecese plan
