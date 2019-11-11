@@ -50,7 +50,7 @@ def game():
         print("dommage dommage dommage dommage dommage dommage dommagedommage dommage dommage dommage dommage")
         print("la partie est finie, ::(:(:(::(:(:(:(:(:vous avez perdu:(:(:(:(:(:(:(:(:".center(20))
         play_again()
-    return (scor_player, scor_computer)
+
 
 def play_again():
     answer = input("voulez vous jouer de nouveau? taper oui ou non").upper()#accept oui/non
@@ -58,15 +58,13 @@ def play_again():
     while answer not in tag:#if input different =error
         print("erreur de saisie taper oui ou non")
         answer = input("entrer votre réponce de nouveau").upper()
-    if answer=="NON":
-        print("Merci Aurevoir".center(50))
-        presentation()
-    elif answer=="OUI":
+    if answer=="OUI":
         print("les scores sont remis à zéros".center(50))
         game()
+    if answer=="NON":
+        print("Merci Aurevoir".center(50))
 
 """the main code body"""
 
 presentation()
 game()
-play_again()
