@@ -1,4 +1,4 @@
-## circonstances to write this code:
+## Circonstances to write this code:
 
   As exercise for the fourth week in a python cours and to apply diffrents theories teached, we have to carry out a first project.
   We have to code the fishumi game using functions and loops.
@@ -7,7 +7,7 @@
 
 
 
-## fishumi game rules:
+## Fishumi game rules:
 
 - The user lance the program and insert her name.
 - He make choice from: pierre/feuille/ciseaux.
@@ -30,3 +30,5 @@ the game is restarted until one of the player or the computer has three points.
 - Manage coding errors
 - A good plan of time
 - A respect of deadline and usecese steps
+- calling a function from an other file
+- calling a function in an other function
